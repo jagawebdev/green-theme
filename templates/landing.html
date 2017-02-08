@@ -1,0 +1,135 @@
+<!-- Intro section================================ -->
+<section id="intro" class="intro text-center">
+  <div class="container intro__content wrapper-inside">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <p class="text-center"><strong>{title}</strong></span> is
+          happening at the all-inclusive {hotel_c}, in
+          {destination_c}<span style="display:{traveldatecss}";>,
+            on {trip_date} - {enddate}</span>. We are inviting
+            everyone to join by booking below. For any questions,
+            feel free to reach out to our Booking Agent <strong>{full_name_user}.</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery section================================ -->
+<section id="gallery" class="container-space text-center" style="display: {couple_galleryCss}">
+    <div class="container">
+        <div class="row row-centered">
+            <div class="col-md-3 col-centered" style="display:{coupleimage1Css}">
+                <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/1.jpg"><img data-u="image" src="images/1.jpg" alt="couple's picture" /></a></div>
+            </div>
+            <div class="col-md-3 col-centered" style="display:{coupleimage2Css}">
+                <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/2.jpg"><img data-u="image" src="images/2.jpg" alt="couple's picture" /></a></div>
+
+            </div>
+            <div class="col-md-3 col-centered" style="display:{coupleimage3Css}">
+                <div class="image-list wthumbnail"><a class="fancybox" rel="gallery1" href="images/3.jpg"><img data-u="image" src="images/3.jpg" alt="couple's picture" /></a></div>
+            </div>
+            <div class="col-md-3 col-centered" style="display:{coupleimage4Css}">
+                <div class="image-list wthumbnail more-pic-link">
+                    <a class="fancybox" rel="gallery1" href="images/4.jpg">
+                        <img data-u="image" src="images/4.jpg" alt="couple's picture" />
+                        <div class="thumb-meta">More Pictures...</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+            <div class="image-list more_pic"><a class="{coupleimage5Css}" rel="gallery1" href="images/5.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage6Css}" rel="gallery1" href="images/6.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage7Css}" rel="gallery1" href="images/7.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage8Css}" rel="gallery1" href="images/8.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage9Css}" rel="gallery1" href="images/9.jpg"></a></div>
+            <div class="image-list more_pic"><a class="{coupleimage10Css}" rel="gallery1" href="images/10.jpg"></a></div>
+    </div>
+    <div class="clearfix"></div>
+</section>
+
+
+<!-- ARE YOU GOING?  section================================ -->
+<section id="going" class="going text-center" style="display:{travelerscss};">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1 class="going__title">Are you going?</h1>
+
+          <div class="row" style="display:{travelerscss};">
+
+            <div class="col-md-12">
+              <p class="travelers" id="pendingtravelers">{pendingtravelers}</p><!--endpending-->
+            </div>
+
+          </div>
+          <div class="row" style="display:{travelerscss};">
+
+            <div class="col-md-12">
+              <p class="travelers" id="activetravelers">{activetravelers}</p><!--endactive-->
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- destination section ================================ -->
+<section id="destination">
+    <div class="container text-center">
+          <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <h1>{hotel_c}</h1>
+                </div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+
+            <div class="video row" style="display:{video_id_css};">
+              <div class="col-sm-12">
+                <figure>
+                    <iframe class="youtube" src="https://www.youtube.com/embed/{video_id}" frameborder="0" allowfullscreen></iframe>
+                </figure>
+              </div>
+            </div>
+
+            <div class="row destination-pics row-centered">
+        		<div class="col-md-4 col-centered">
+        		    <div class="bthumbnail">
+        			    <img src="images/{hotel_c}3.jpg" class="img-responsive" alt="resort picture"/>
+        			</div>
+        		</div><!-- .col-md-4 -->
+        		<div class="col-md-4 col-centered">
+        		    <div class="bthumbnail">
+        			    <img src="images/{hotel_c}3.jpg" class="img-responsive" alt="resort picture"/>
+        			</div>
+        		</div><!-- .col-md-4 -->
+        		<div class="col-md-4 col-centered">
+        		    <div class="bthumbnail">
+        			    <img src="images/{hotel_c}3.jpg" class="img-responsive" alt="resort picture" />
+        			</div>
+        		</div><!-- .col-md-4 -->
+        	</div><!-- .row -->
+
+          <div class="row hotel-numbers text-center">
+            <div class="col-xs-3">
+                <span class="hotel-number">{pools}</span><br/><span class="hotel-names"><strong>Pools</strong></span>
+            </div>
+            <div class="col-xs-3">
+                <span class="hotel-number">{bars}</span><br/><span class="hotel-names"><strong>Bars</strong></span>
+            </div>
+            <div class="col-xs-3">
+                <span class="hotel-number">{restaurants}</span><br/><span class="hotel-names hotel-names-3"><strong>Restaurants</strong></span>
+            </div>
+            <div class="col-xs-3">
+                <span class="hotel-number">{stars}</span><br/><span class="hotel-names"><strong>Stars</strong></span>
+            </div>
+          </div>
+
+        	<div class="row container-space">
+                <div class="col-sm-8 col-sm-offset-2">
+            			<p>{description_hotel}
+                  </p>
+                </div><!-- .col-sm-6 -->
+            </div><!-- .row -->
+    </div><!-- .container -->
+</section>

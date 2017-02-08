@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="lillyTemplate">
+<head>
+	<meta charset="utf-8" http-equiv="Content-Type" content="text/html">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="TravelZap is a group vacation service provider,
+		                specializing in unprecedented combination of savings,
+		                service, and efficiency for the leisure group travel
+		                industry.">
+	<!--GOOGLE FONTS-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+
+	<!--ICONS-->
+	<link rel="stylesheet" type="text/css" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+	<title>{title}</title>
+
+	<!--BOOTSTRAP CORE CSS-->
+	<link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+
+	<!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!--custom css-->
+	<link rel="stylesheet" type="text/css" href="js/fancybox/source/jquery.fancybox.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="compiled.css">
+
+</head>
+
+<body>
+	<!-- HEADER ====================================== -->
+
+	<header class="header">
+		<div class="container ">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+				<h1 class="header__group-title">{title}</h1>
+				<aside class="header__subtitle">Planned and organized by {leadername}</aside>
+				</div>
+			</div>
+		</div>
+  </header><!-- end header -->
+
+<section >
+		<navbar class="navigation" id="headnav">
+			<div class="navigation-list container">
+							<ul>
+									<li class="dropdown">
+											<a data-toggle="collapse" data-target="dropdown-menu" class="dropdown-toggle" href="#/landing">Home <b class="caret"></b></a>
+
+											<ul class="dropdown-menu">
+												<li style="display:{couple_galleryCss}"><a href="#/landing#intro">About</a></li>
+												<li style="display:{couple_galleryCss}"><a href="#/landing#gallery">Gallery</a></li>
+												<li style="display:{about_usCSS}"><a href="#/landing#going">Who is going?</a></li>
+												<li style="display:{registeryCss}"><a href="#/landing#destination">Resort</a></li>
+											</ul>
+									</li>
+									<li class="dropdown">
+											<a data-toggle="collapse" data-target="dropdown-menu" class="dropdown-toggle" href="#/destination">Booking<b class="caret"></b></a>
+											<ul class="dropdown-menu">
+												<li><a href="#/destination#group-rates">Group Rates</a></li><br/>
+												<li style="display:{additional_infoCss};"><a href="#/destination#additional-info">Additional Information</a></li>
+												<li><a href="#/destination#booking">Booking</a></li><br/>
+												<li style="display:{paymentCss};"><a href="#/destination#payment">Payment</a></li>
+											</ul>
+									</li>
+									<li><a href="#/contact">Contact</a></li>
+									<li><a href="#/faq">Faq</a></li>
+									<li><a href="#/destination#booking"><button class="book-now">Book Now!</button></a></li>
+							</ul>
+					</div><!-- end navigation-list -->
+						<a href="">
+								<div class="hamburger">MENU
+										<div class="drop-menu">
+												<ul class="drop-ul">
+														<li><a href="#/landing" class="drop-link">Home</a></li>
+														<li><a href="#/destination" class="drop-link">Booking</a></li>
+														<li><a href="#/contact" class="drop-link">Contact</a></li>
+														<li><a href="#/faq" class="drop-link">Faq</a></li>
+														<li><a href="#/destination#booking" class="drop-link red bold">Book Now!</a></li>
+												</ul>
+										</div>
+							 </div>
+					 </a>
+		</navbar>
+</section>
+	<!-- ANGULAR-- DISPLAYS DIFFERENT TEMPLATES ACCORDINGLY =============== -->
+	<div ng-view autoscroll="true"></div>
+
+	<!-- FOOTER ====================================== -->
+	<footer>
+	    <div class="container">
+	        <div class="row">
+					<div class="col-sm-4">
+        				Created by <a href="http://travelzap.com" target="_blank">Travel Zap Inc.</a>
+        			</div>
+
+        			<div class="col-sm-4" style="display: {no_discountCss}">
+        				 <p>Planning your next group vacation?</br> Please reach out to us <a href="http://travelzap.com/group-vacation-quote" target="_blank">here.</a></p>
+        			</div>
+
+        			<div class="col-sm-4" style="display: {discountCss}">
+        				 <p><span class="gold">$150 off</span> for your next group vacation. Discount code #{discount_code}. </br> Please reach out to us <a href="http://travelzap.com/group-vacation-quote" target="_blank">here.</a></p>
+        			</div>
+
+        			<div class="col-sm-3 col-sm-offset-1 social-list ">
+        				<ul class="list-inline">
+        					<li><a href="https://www.facebook.com/TravelZapInc" target="_blank"><i class="ion-social-facebook"></i></a></li>
+        					<li><a href="https://twitter.com/Travel_Zap" target="_blank"><i class="ion-social-tumblr"></i></a></li>
+        				</ul>
+        			</div><!-- end social-list -->
+	        </div><!-- end row -->
+	    </div><!-- end container -->
+	</footer>
+
+	<!-- FIXED FOOTER ====================================== -->
+	<section id="fixed-footer">
+		<!-- price-guarantee footer ====================================== -->
+	        <div class="price-match text-center" data-toggle="collapse" data-target="#price-match-content" aria-expanded="false" aria-controls="collapseExample">
+	            <img src="assets/img/guarantee.png" />
+	            <!--<p class="title1">Price Match</p>-->
+	            <!--<p class="title2">GUARANTEE</p>-->
+	            <span class="title3">Click to learn more.</span>
+
+	           <div class="collapse text-left" id="price-match-content">
+				  <div class="card card-block">
+				    <p>-Found a lower price on a competitor site? We'll match it plus you still
+						    get a low deposit option with our agency.</br>
+							-Price matching must be done at the time of the initial booking.</br>
+							-All components must match exactly.</p>
+							<button class="price-match-sm price-match-button" data-toggle="collapse" data-target="#price-match-content-sm" aria-expanded="false" aria-controls="collapseExample">HIDE</button>
+				  </div>
+				</div>
+	        </div><!-- end price-match -->
+
+		<!-- agent info footer ====================================== -->
+	    <div  class="agent-cta">
+	        <div class="agent-cta-title text-center">
+	            <p class="title1">Questions?</p>
+	            <p>Contact the agent today!</p>
+	        </div><!-- end agent-cta-title -->
+
+	        <div class="agent-cta-info">
+                <ul class="ul-no-deco">
+                    <li>{full_name_user}</li>
+                    <li>Phone: <a href="tel:{phone_work_user}">{phone_work_user}</a></li>
+                    <li>Text: <a href="sms:{phone_mobile_user}">{phone_mobile_user}</a></li>
+										<li><a href="mailto:{assigned_user_email}">{assigned_user_email}</a></li>
+                </ul>
+            </div><!-- end agent-cta-info -->
+        </div><!-- end agent-cta -->
+	</section>
+
+	<!-- FIXED FOOTER FOR SMALL VIEW ====================================== -->
+	<section id="fixed-footer-sm">
+		<!-- agent info footer ====================================== -->
+		<div class="text-right"><a class="price-match-sm" data-toggle="collapse" data-target="#price-match-content-sm" aria-expanded="false" aria-controls="collapseExample"><span >PRICE MATCH <span class="learn-more">Learn more</span></span></a></div>
+	     <!-- price-guarantee footer ====================================== -->
+	         <div class="collapse text-left" id="price-match-content-sm">
+				  <div>
+				    <p>-Found a lower price on a competitor site? We'll match it plus you still
+				    get a low deposit option with our agency.</br>
+					-Price matching must be done at the time of the initial booking.</br>
+					-All components must match exactly.</p>
+				    <button class="price-match-sm price-match-button" data-toggle="collapse" data-target="#price-match-content-sm" aria-expanded="false" aria-controls="collapseExample">HIDE</button>
+				  </div>
+
+	        </div><!-- end price-match -->
+	    <div  class="agent-cta-sm">
+	        <div class="text-center">
+		        <p><span class=" agent-cta-title-sm title1 ">Questions?</span> {first_name_user} | P: <a href="tel:{phone_work_user}">{phone_work_user}</a> | Text: <a href="sms:{phone_mobile_user}">{phone_mobile_user}</a> | <a href="mailto:{assigned_user_email}">{assigned_user_email}</a></p>
+		        <!--<span class="price-match-sm" data-toggle="collapse" data-target="#price-match-content-sm" aria-expanded="false" aria-controls="collapseExample">PRICE MATCH <span class="learn-more">Learn more</span></span>-->
+	        </div><!-- end agent-cta-title -->
+        </div><!-- end agent-cta -->
+	</section>
+
+	<!-- THIRD PARTY JS-->
+		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+		<script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+	integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- application scripts -->
+		<script type="text/javascript" src="js/jquery.countdown.js"></script>
+		<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/app.js" type="text/javascript"></script>
+
+    <!-- RSVP Form Processing -->
+	<script src="js/rsvp.js"></script>
+</body>
+</html>
