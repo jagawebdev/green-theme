@@ -648,7 +648,7 @@ header {
 #headnav {
   top: 0;
   z-index: 999;
-  height: 65px;
+  height: 45px;
   width: 100%;
 }
 
@@ -658,8 +658,8 @@ header {
   position: relative;
   font-weight: 400;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 5px;
+  padding-top: 10px;
+  padding-bottom: 0px;
   font-size: 14px;
   border-bottom: #01213F 1px solid;
 }
