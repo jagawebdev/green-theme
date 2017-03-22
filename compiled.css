@@ -725,13 +725,19 @@ header {
   cursor: pointer;
 }
 
+ .main-nav-scrolled {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
 .drop-menu {
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  margin-top: 60px;
+  margin-top: 45px;
   text-align: center;
   z-index: 200;
   background-color: #01213F;
@@ -967,33 +973,33 @@ header {
 
 .group-rates .inclusive-icon {
   display: inline-block;
-  height: 60px;
-  width: 60px;
-  background: url("assets/img/iconninja-sprites.png") no-repeat;
+  height: 55px;
+  width: 75px;
+  background: url("assets/img/iconninja-sprites.svg") no-repeat;
 }
 
 .group-rates .icon-1 {
-  background-position: -89px 0;
+  background-position: -5px 0;
 }
 
 .group-rates .icon-2 {
-  background-position: 0 0;
+  background-position: -105px 0;
 }
 
 .group-rates .icon-3 {
-  background-position: -180px 0;
+  background-position: -184px 0;
 }
 
 .group-rates .icon-4 {
-  background-position: -263px 0;
+  background-position: -275px 0;
 }
 
 .group-rates .icon-5 {
-  background-position: -340px 0;
+  background-position: -390px 0;
 }
 
 .group-rates .icon-6 {
-  background-position: -430px 0;
+  background-position: -505px 0;
 }
 
 @media (max-width: 767px){

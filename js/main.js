@@ -40,6 +40,15 @@ $(window).scroll(function(){
         $("html, body").stop(true, false);
     });
     });
+    
+    
+    var mn = $(".navigation");
+     if( $(this).scrollTop() > 140 ) {
+          mn.addClass("main-nav-scrolled");
+        } else {
+          mn.removeClass("main-nav-scrolled");
+        }
+    
 
     /**
     * Scroll slow effect to #booking
@@ -55,18 +64,18 @@ $(window).scroll(function(){
     });
 });
 
-var headnav = document.getElementById('headnav');
-var headnavPos = headnav.offsetTop;
-window.onscroll = function() {
-    console.log(document.body.scrollTop);
-    if(document.body.scrollTop > headnavPos) {
-        if(headnav.style.position !== 'fixed') {
-            headnav.style.position = 'fixed';
-        }
-    } else  {
-        if(headnav.style.position === 'fixed') {
-            headnav.style.position = '';
-        }
-    }
+// var headnav = document.getElementById('headnav');
+// var headnavPos = headnav.offsetTop;
+// window.onscroll = function() {
+//     console.log(document.body.scrollTop);
+//     if(document.body.scrollTop > headnavPos) {
+//         if(headnav.style.position !== 'fixed') {
+//             headnav.style.position = 'fixed';
+//         }
+//     } else  {
+//         if(headnav.style.position === 'fixed') {
+//             headnav.style.position = '';
+//         }
+//     }
 
-}
+// }
